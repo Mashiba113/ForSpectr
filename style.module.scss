@@ -1,0 +1,150 @@
+.services {
+    width: 100%;
+    padding-top: 140px;
+    @media (max-width: 1000px) {
+        padding-top: 100px;
+    }
+    .content {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        h2 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 120%;
+            color: #fff;
+        }
+        .services_items_row {
+            width: 100%;
+            display: flex;
+            column-gap: 20px;
+            @media (max-width: 650px) {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+        }
+        .services_items {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            column-gap: 20px;
+            row-gap: 30px;
+            margin-top: 40px;
+            .services_item {
+                width: 50%;
+                height: 404px;
+                padding: 40px;
+                cursor: pointer;
+                @media (max-width: 650px) {
+                    width: 100%;
+                }
+                h3 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 140%;
+                    color: #fff;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 120%;
+                    color: #C7C7C7;
+                    margin-top: 10px;
+                }
+                &:first-child {
+                    background: url(../../../../assets/images/service1.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+                &:nth-child(2) {
+                    background: url(../../../../assets/images/service2.png) no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+        }
+        .no_bg {
+            width: 100% !important;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0 !important;
+            background: none !important;
+            height: max-content !important;
+            .text {
+                display: flex;
+            }
+            h3 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 50px !important;
+                line-height: 120%;
+                color: #fff;
+            }
+            ul {
+                list-style: '/   ';
+                padding: 0;
+                margin-top: 30px;
+                margin-left: 40px;
+                li {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;    
+                    line-height: 140%;
+                    color: #797979;
+                }
+            }
+            .btns {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                margin-top: 40px;
+                .btn {
+                    margin: 0;
+                }
+            }
+            .buttom {
+                width: 100%;
+            }
+        }
+        .btn {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background: #222222;
+            border: 1px solid #222222;
+            cursor: pointer;
+            margin-top: 40px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+            color: #C7C7C7;
+            span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 120%;
+                color: #797979;
+                margin-left: 5px;
+                &::before {
+                    content: '[';
+                }
+                &::after {
+                    content: ']';
+                }
+            }
+        }
+    }
+}
